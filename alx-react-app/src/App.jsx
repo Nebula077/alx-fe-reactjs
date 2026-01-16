@@ -7,6 +7,7 @@ import Header from './Header'
 import MainContent from './MainContent'
 import Footer from './Footer'
 import UserProfile from './components/UserProfile.jsx'
+import ExampleComponent from './Hook.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -38,6 +39,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <WelcomeMessage />
+      <ExampleComponent />
     </>
   )
 }
