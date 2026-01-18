@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Home from '../Home';
 import About from '../About';
-import Contact from '../Contact';
+import Contact from './Contact';
 import Services from '../Services';
 
 function NavBar() {
