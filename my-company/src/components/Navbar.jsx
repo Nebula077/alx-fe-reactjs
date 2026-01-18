@@ -6,7 +6,7 @@ import Services from '../Services';
 
 function NavBar() {
   return (
-    <nav style={{ padding: '10px', borderBottom: '1px solid #ccc', display: 'flex', marginTop: '20px'}}>
+    <nav style={{ padding: '10px', borderBottom: '1px solid #ccc', display: 'flex', marginTop: '20px', backgroundColor: '#f0f0f0', justifyContent: 'center' }}>
       <Link to="/" style={{ margin: '0 10px' }}>Home</Link>
       <Link to="/about" style={{ margin: '0 10px' }}>About</Link>
       <Link to="/contact" style={{ margin: '0 10px' }}>Contact</Link>
