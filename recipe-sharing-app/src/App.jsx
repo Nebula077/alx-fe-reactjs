@@ -8,6 +8,8 @@ import EditRecipeForm from "./components/EditRecipeForm";
 import { Route } from "react-router-dom";
 import DeleteRecipeButton from "./components/DeleteRecipeButton";
 import SearchBar from "./components/SearchBar";
+import RecommendationsList from "./components/RecommendationsList";
+import FavoritesList from "./components/FavoritesList";
 
 
 const App = () => {
@@ -16,6 +18,8 @@ const App = () => {
       <Route path="/RecipeDetails" element={<RecipeDetails />} />
       <Route path="/EditRecipe" element={<EditRecipeForm />} />
       <Route path="/DeleteRecipe" element={<DeleteRecipeButton />} />
+      <Route path="/RecommendationsList" element={<RecommendationsList />} />
+      <Route path="/FavoritesList" element={<FavoritesList />} />
 </Routes>
 
 
@@ -27,6 +31,8 @@ const App = () => {
       <SearchBar />
       <AddRecipeForm />
       <RecipeList />
+      <FavoritesList />
+      <RecommendationsList />
     </div>
   );
 }

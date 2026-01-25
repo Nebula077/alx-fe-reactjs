@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import RecipeDetails from "./RecipeDetails";
+import EditRecipeForm from "./EditRecipeForm";
+import DeleteRecipeButton from "./DeleteRecipeButton";
 
 const NavBar = () => {
     return (
