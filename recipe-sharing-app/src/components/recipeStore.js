@@ -1,4 +1,5 @@
 import { create } from 'zustand'
+import SearchBar from './SearchBar';
 
 const useRecipeStore = create(set => ({
   recipes: [],
