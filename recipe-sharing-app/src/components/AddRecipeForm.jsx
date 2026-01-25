@@ -16,7 +16,7 @@ import { create } from 'zustand';
     };
 
     return (
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px', alignItems: 'center', borderRadius: '10px' }} >
         <input
           type="text"
           value={title}

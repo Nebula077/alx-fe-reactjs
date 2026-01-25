@@ -14,12 +14,12 @@
 
 
     return (
-      <div style={{ display: 'flex', flexDirection: 'column' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', gap: '20px', marginTop: '20px' }}>
         {recipes.map(recipe => (
           <div key={recipe.id}>
             <h3>{recipe.title}</h3> 
             <p>{recipe.description}</p>
-            <input type="checkbox" /><button className='delete' onClick={() => deleteRecipe(recipe.id)}>Delete</button><button className='edit' onClick={() => editRecipe(recipe.id, { title: 'Updated Title', description: 'Updated Description' })}>Edit</button>
+            <input type="checkbox" /><button className='delete' onClick={() => deleteRecipe(recipe.id)}>Delete</button><button className='edit' onClick={() => updateRecipe(recipe.id, { title: 'Updated Title', description: 'Updated Description' })}>Edit</button>
             <hr />
           </div>
         ))}
