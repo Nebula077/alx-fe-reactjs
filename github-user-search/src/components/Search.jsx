@@ -9,6 +9,11 @@ const Search = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      handleSearch();
+    };
     const handleSearch = async () => {
       try {
         setLoading(true);
@@ -40,15 +45,18 @@ const Search = () => {
 
   return (
     <div>
-      <input
-        type="text"
-        placeholder="Search GitHub users"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-      />
-      <button onClick={handleSearch}>Search</button>
-      {loading && <p>Loading...</p>}
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+      <form action="submit" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="Search GitHub users"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        <button onClick={handleSearch}>Search</button>
+        {loading && <p>Loading...</p>}
+        {error && <p style={{ color: 'red' }}>{error}</p>}
+      </form>
+      
       <ul>
         {results.map((user) => (
           <li key={user.id}> <img src={user.avatar_url} alt={user.login} /> {user.login} - <a href={user.html_url} target="_blank" rel="noopener noreferrer">View Profile</a></li>
