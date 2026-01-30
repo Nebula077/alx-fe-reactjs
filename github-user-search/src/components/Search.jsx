@@ -1,5 +1,5 @@
 import { use, useEffect, useState } from "react";
-import githubService from "../services/githubService";
+import fetchUserData from "../services/githubService";
 import './Search.css'
 import axios from "axios";
 
@@ -18,7 +18,7 @@ const Search = () => {
       try {
         setLoading(true);
         setError(null);
-        const response = await githubService.get("/search/users", {
+        const response = await fetchUserData(`/search/users`, {
           params: {
             q: query,
           },
@@ -45,7 +45,7 @@ const Search = () => {
 
   return (
     <div>
-      <form action="submit" onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Search GitHub users"

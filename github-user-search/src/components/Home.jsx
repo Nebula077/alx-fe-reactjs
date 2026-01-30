@@ -1,5 +1,5 @@
 import React from "react";
-import githubService from "../services/githubService";
+import fetchUserData from "../services/githubService";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Search from "./Search";
@@ -12,7 +12,7 @@ const Home = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await githubService.get("/users");
+        const response = await fetchUserData("/users");
         console.log(response.data);
         setUsers(response.data);
       } catch (error) {
