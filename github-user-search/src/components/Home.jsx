@@ -13,10 +13,9 @@ const Home = () => {
     const fetchUsers = async () => {
       try {
         const response = await fetchUserData("/users");
-        console.log(response.data);
         setUsers(response.data);
       } catch (error) {
-        console.error(error); 
+        setError("Something went wrong. Please try again."); 
       }
     };
     fetchUsers();

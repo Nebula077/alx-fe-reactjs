@@ -36,7 +36,6 @@ function Search() {
         setLoading(false);
       }, 2000);
     } catch (error) {
-      console.error(error);
       setError("Looks like we cant find the user");
       setLoading(false);
     } finally {
@@ -64,7 +63,6 @@ function Search() {
         setLoading(false);
       }, 2000);
     } catch (error) {
-      console.error(error);
       setError("Looks like we cant find users in that location");
       setLoading(false);
     }
@@ -102,7 +100,6 @@ function Search() {
         setLoading(false);
       }, 2000);
     } catch (error) {
-      console.error(error);
       setError("Search failed. Please try different criteria.");
       setLoading(false);
     }
