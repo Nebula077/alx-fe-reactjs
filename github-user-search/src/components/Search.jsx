@@ -107,6 +107,15 @@ function Search() {
       setLoading(false);
     }
   };
+  const fetchUserData = async (url, options = {}) => {
+    const headers = {
+      'Accept': 'application/vnd.github.v3+json',
+      'Authorization': `token ${import.meta.env.VITE_APP_GITHUB_API_KEY}`,
+      ...options.headers,
+    };
+    const response = await axios.get(url, { headers, ...options });
+    return response.data;
+  };
 
   return (
     <div className="search-container">
