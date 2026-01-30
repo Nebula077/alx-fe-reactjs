@@ -1,0 +1,104 @@
+/* NotFound Component Styles */
+
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.not-found-content {
+  text-align: center;
+  max-width: 500px;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.error-code {
+  font-size: 6em;
+  font-weight: 700;
+  color: #3b82f6;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(59, 130, 246, 0.3);
+}
+
+.error-title {
+  font-size: 2em;
+  color: #1f2937;
+  margin: 10px 0 20px 0;
+  font-weight: 600;
+}
+
+.error-message {
+  color: #6b7280;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.navigation-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.home-link, .search-link {
+  display: inline-block;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 1em;
+  transition: all 0.2s ease;
+}
+
+.home-link {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.home-link:hover {
+  background-color: #2563eb;
+  transform: translateY(-1px);
+}
+
+.search-link {
+  background-color: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+}
+
+.search-link:hover {
+  background-color: #e5e7eb;
+  transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .not-found-content {
+    padding: 30px 20px;
+  }
+
+  .error-code {
+    font-size: 4em;
+  }
+
+  .error-title {
+    font-size: 1.5em;
+  }
+
+  .navigation-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-link, .search-link {
+    width: 100%;
+    max-width: 200px;
+  }
+}
