@@ -27,7 +27,7 @@ const Home = () => {
       <h1>Home</h1>
       <ul>
         <Search />
-        {users.map((user) => (
+        {Array.isArray(users) && users.map((user) => (
           <li key={user.id} style={{ listStyle: 'decimal' }}> <img src={user.avatar_url} alt={user.login} /> {user.login} - <a href={user.html_url} target="_blank" rel="noopener noreferrer">View Profile</a></li>
         ))}
       </ul>
