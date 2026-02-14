@@ -8,7 +8,7 @@ function AddRecipeForm() {
     summary: '',
     image: '',
     ingredients: '',
-    cooking_instructions: '',
+    steps: '',
   });
 const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,7 +16,8 @@ const handleSubmit = (e) => {
   };
 
 const handleInputChange = (e) => {
-    const { name, value } = e.target;
+    const { name } = e.target;
+    const value = e.target.value;
     setFormData((prevFormData) => ({
       ...prevFormData,
       [name]: value,
@@ -36,8 +37,8 @@ const handleInputChange = (e) => {
         <input type="text" id="image" name="image" value={formData.image} onChange={handleInputChange} className='border-2 border-gray-300 rounded-lg p-2 mb-4 w-full' />
         <label htmlFor="ingredients">Ingredients:</label>
         <textarea id="ingredients" name="ingredients" value={formData.ingredients} onChange={handleInputChange} className='border-2 border-gray-300 rounded-lg p-2 mb-4 w-full' />
-        <label htmlFor="cooking_instructions">cooking Instructions:</label>
-        <textarea id="cooking_instructions" name="cooking_instructions" value={formData.cooking_instructions} onChange={handleInputChange} className='border-2 border-gray-300 rounded-lg p-2 mb-4 w-full' />
+        <label htmlFor="steps">Steps:</label>
+        <textarea id="steps" name="steps" value={formData.steps} onChange={handleInputChange} className='border-2 border-gray-300 rounded-lg p-2 mb-4 w-full' />
         <button type="submit" className='bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300'>Add Recipe</button>
       </form>
     </div>
