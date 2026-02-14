@@ -25,6 +25,12 @@ function RecipeDetail() {
                 <p className='font-serif justify-center p-0.5 mx-auto'>{recipe.summary}</p>
                 <img src={recipe.image} alt={recipe.title} className='p-1.5 w-48 h-48 rounded-2xl mx-auto sm:w-24 sm:h-24 md:w-36 md:h-36 hover:scale-110 transition-transform duration-300 ease-in-out'/>
                 <h4 className='text-blue-400 font-bold p-1.5 hover:text-blue-600 hover:translate-y-1'>Cooking Instructions</h4>
+                <h5>Ingredients</h5>
+                <ul className='list-disc pl-5'>
+                    {recipe.ingredients.map((ingredient, index) => (
+                        <li key={index}>{ingredient}</li>
+                    ))}
+                </ul>
                 <p>{recipe.cooking_instructions}</p>
             </div>
         )

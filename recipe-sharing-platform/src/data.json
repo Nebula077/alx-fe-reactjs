@@ -3,6 +3,7 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "ingredients": ["400g spaghetti", "4 large eggs", "200g pancetta or bacon", "100g Parmesan cheese", "Salt", "Black pepper"],
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Spaghetti_alla_Carbonara_%28cropped%29.jpg",
     "cooking_instructions": "Cook spaghetti in salted boiling water until al dente. In a bowl, whisk eggs and grated Parmesan cheese. Fry pancetta until crispy. Drain pasta and quickly toss with pancetta, then remove from heat and mix in egg-cheese mixture. Stir vigorously to create a creamy sauce. Season with black pepper and serve immediately."
   },
@@ -10,6 +11,7 @@
     "id": 2,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
+    "ingredients": ["800g chicken breast, cubed", "500ml yogurt", "3 tbsp lemon juice", "4 cloves garlic", "2 tbsp ginger paste", "2 onions", "400g tomato puree", "200ml heavy cream", "4 tbsp butter", "Garam masala, turmeric, cumin"],
      "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Chicken_tikka_masala.jpg",
     "cooking_instructions": "Marinate chicken in yogurt, lemon juice, garlic, ginger, and spices for at least 1 hour. Grill or pan-sear until cooked through. In a separate pan, sauté onions, garlic, and ginger, then add tomato puree, cream, and spices. Simmer until thickened. Add grilled chicken and cook for 10–15 minutes. Serve hot with rice or naan."
   },
@@ -17,6 +19,7 @@
     "id": 3,
     "title": "Beef Stir Fry",
     "summary": "A quick Asian-style dish featuring tender beef strips sautéed with vegetables in a savory soy-based sauce.",
+    "ingredients": ["700g beef sirloin, thinly sliced", "3 tbsp vegetable oil", "4 cloves garlic, minced", "2 tbsp ginger, minced", "2 bell peppers", "2 cups broccoli florets", "4 tbsp soy sauce", "2 tbsp sesame oil", "Cooked rice for serving"],
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Beef_stir_fry.jpg",
     "cooking_instructions": "Slice beef thinly against the grain. Heat oil in a wok over high heat. Sauté garlic and ginger, add beef and cook until browned. Add sliced vegetables such as bell peppers and broccoli. Stir in soy sauce and a splash of sesame oil. Cook for 3–5 minutes and serve over rice."
   },
@@ -24,6 +27,7 @@
     "id": 4,
     "title": "Margherita Pizza",
     "summary": "A traditional Italian pizza topped with tomato sauce, fresh mozzarella, and basil.",
+    "ingredients": ["500g pizza dough", "250ml tomato sauce", "300g fresh mozzarella", "Fresh basil leaves", "Salt", "Olive oil"],
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Pizza_Margherita_stu_spivack.jpg",
     "cooking_instructions": "Preheat oven to 475°F (245°C). Roll out pizza dough and spread tomato sauce evenly. Add slices of fresh mozzarella. Bake for 10–12 minutes until crust is golden and cheese is bubbling. Garnish with fresh basil leaves before serving."
   },
@@ -31,6 +35,7 @@
     "id": 5,
     "title": "Caesar Salad",
     "summary": "A crisp salad made with romaine lettuce, croutons, Parmesan cheese, and creamy Caesar dressing.",
+    "ingredients": ["1 head romaine lettuce", "100g croutons", "80g Parmesan cheese", "200ml mayonnaise", "3 tbsp lemon juice", "4 cloves garlic", "2 tbsp anchovy paste", "Salt and pepper"],
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Caesar_salad_%281%29.jpg",
     "cooking_instructions": "Wash and chop romaine lettuce. Prepare dressing by mixing mayonnaise, lemon juice, garlic, anchovy paste, and Parmesan. Toss lettuce with dressing, add croutons, and sprinkle with grated Parmesan cheese. Serve chilled."
   },
@@ -38,6 +43,7 @@
     "id": 6,
     "title": "Vegetable Fried Rice",
     "summary": "A flavorful rice dish stir-fried with mixed vegetables, soy sauce, and scrambled eggs.",
+    "ingredients": ["3 cups cooked rice", "3 eggs", "3 tbsp vegetable oil", "4 cloves garlic, minced", "1 cup carrots, diced", "1 cup peas", "1 bell pepper, diced", "4 tbsp soy sauce", "Salt and pepper"],
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Fried_rice_with_vegetables.jpg",
     "cooking_instructions": "Heat oil in a wok. Scramble eggs and set aside. Sauté garlic, carrots, peas, and bell peppers. Add cooked rice and stir well. Pour in soy sauce and mix thoroughly. Return scrambled eggs to the pan and cook for another 2–3 minutes before serving."
   },
@@ -45,6 +51,7 @@
     "id": 7,
     "title": "Grilled Salmon",
     "summary": "A healthy and flavorful seafood dish seasoned and grilled to perfection.",
+    "ingredients": ["4 salmon fillets (150g each)", "3 tbsp olive oil", "2 lemons", "Salt", "Black pepper", "Fresh herbs (dill or parsley)"],
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Grilled_salmon.jpg",
     "cooking_instructions": "Season salmon fillets with salt, pepper, lemon juice, and olive oil. Preheat grill to medium-high heat. Grill salmon skin-side down for 4–6 minutes per side until flaky and cooked through. Serve with vegetables or rice."
   },
@@ -52,6 +59,7 @@
     "id": 8,
     "title": "Beef Tacos",
     "summary": "A Mexican-inspired dish consisting of seasoned ground beef served in crispy or soft tortillas with fresh toppings.",
+    "ingredients": ["500g ground beef", "8 taco shells or tortillas", "3 tbsp taco seasoning", "150ml water", "2 cups shredded lettuce", "2 tomatoes, diced", "100g shredded cheese", "200ml salsa", "Sour cream (optional)"],
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Tacos_de_carne_asada.jpg",
     "cooking_instructions": "Brown ground beef in a skillet and drain excess fat. Add taco seasoning and a small amount of water; simmer for 5 minutes. Warm tortillas. Fill with seasoned beef and top with lettuce, tomatoes, cheese, and salsa before serving."
   },
@@ -59,6 +67,7 @@
     "id": 9,
     "title": "Mushroom Risotto",
     "summary": "A creamy Italian rice dish slowly cooked with broth and sautéed mushrooms.",
+    "ingredients": ["300g Arborio rice", "400g mushrooms, sliced", "1 onion, diced", "4 tbsp butter", "150ml white wine", "1L warm vegetable broth", "80g Parmesan cheese", "2 tbsp olive oil", "Salt and pepper"],
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Mushroom_risotto.jpg",
     "cooking_instructions": "Sauté onions and mushrooms in butter. Add Arborio rice and toast lightly. Pour in white wine and cook until absorbed. Gradually add warm broth, stirring continuously until rice is creamy and tender. Stir in Parmesan cheese and serve warm."
   },
@@ -66,6 +75,7 @@
     "id": 10,
     "title": "Pancakes",
     "summary": "Fluffy breakfast cakes made from a simple batter of flour, eggs, milk, and baking powder.",
+    "ingredients": ["2 cups all-purpose flour", "2 tbsp sugar", "2 tsp baking powder", "300ml milk", "2 eggs", "4 tbsp melted butter", "Pinch of salt", "Maple syrup for serving"],
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Stack_of_pancakes.jpg",
     "cooking_instructions": "Mix flour, sugar, baking powder, milk, eggs, and melted butter into a smooth batter. Heat a lightly greased pan over medium heat. Pour batter and cook until bubbles form, then flip and cook until golden brown. Serve with syrup."
   },
@@ -73,6 +83,7 @@
     "id": 11,
     "title": "Chocolate Brownies",
     "summary": "Rich and fudgy baked dessert squares made with cocoa and chocolate.",
+    "ingredients": ["200g butter", "200g sugar", "3 eggs", "1 tsp vanilla extract", "100g cocoa powder", "150g all-purpose flour", "Pinch of salt"],
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/68/Chocolatebrownie.JPG",
     "cooking_instructions": "Preheat oven to 350°F (175°C). Melt butter and mix with sugar, eggs, and vanilla. Stir in cocoa powder, flour, and salt. Pour batter into a greased baking pan and bake for 20–25 minutes. Let cool before slicing."
   }
