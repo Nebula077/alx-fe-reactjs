@@ -20,7 +20,7 @@ function RecipeDetail() {
             return <p>Recipe not found</p>
         }
         return (
-            <div className='container mx-auto p-4 content-between border-amber-50 rounded-2xl bg-gray-500 lg:w-1/2 md:w-full sm:w-full'>
+            <div className='container mx-auto p-4 content-between border-amber-50 rounded-2xl bg-gray-500 lg:w-1/2 md:w-full sm:w-full shadow-amber-100 border-2'>
                 <h2 className='font-sans text-2xl text-green-400 p-1.5 mx-auto content-center'>{recipe.title}</h2>
                 <p className='font-serif justify-center p-0.5 mx-auto'>{recipe.summary}</p>
                 <img src={recipe.image} alt={recipe.title} className='p-1.5 w-48 h-48 rounded-2xl mx-auto sm:w-24 sm:h-24 md:w-36 md:h-36 hover:scale-110 transition-transform duration-300 ease-in-out'/>
