@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import data from '../data.json'
 import { Link } from 'react-router-dom'
 import RecipeDetail from './RecipeDetail'
+import AddRecipeForm from './AddRecipeForm'
 
 function HomePage() {
   const [recipes, setRecipes] = useState([])
