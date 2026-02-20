@@ -11,12 +11,29 @@ function RegistrationForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        if (!isFormValid()) {
+            console.log('Form is not valid')
+            return
+        }
         console.log('Form Data:', formData)
     }
 
     const handleChange = (e) => {
         const { name, value } = e.target
         setFormData({...formData, [name]: value})
+    }
+
+    const validateEmail = (email) => {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+        return re.test(String(email).toLowerCase())
+    }
+
+    const validatePassword = (password) => {
+        return password.length >= 6
+    }
+
+    const isFormValid = () => {
+        return formData.username && validateEmail(formData.email) && validatePassword(formData.password)
     }
   return (
     <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded shadow">
