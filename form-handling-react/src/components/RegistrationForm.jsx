@@ -44,7 +44,7 @@ function RegistrationForm() {
                 <input 
                     type="text"
                     className="w-full px-3 py-2 border rounded"
-                    value={formData.username}
+                    value={username}
                     onChange={handleChange}
                     name="username"
                 />
@@ -54,7 +54,7 @@ function RegistrationForm() {
                 <input 
                     type="email"
                     className="w-full px-3 py-2 border rounded"
-                    value={formData.email}
+                    value={email}
                     onChange={handleChange}
                     name="email"
                 />
@@ -64,7 +64,7 @@ function RegistrationForm() {
                 <input 
                     type="password"
                     className="w-full px-3 py-2 border rounded"
-                    value={formData.password}
+                    value={password}
                     onChange={handleChange}
                     name="password"
                 />
