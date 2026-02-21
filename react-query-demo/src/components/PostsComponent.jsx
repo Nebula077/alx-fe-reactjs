@@ -8,6 +8,10 @@ function FetchData() {
     const [postId, setPostId] = useState(1)
     const [isErrors, setIsErrors] = useState(false)
     const [posts, fetchPosts] = useState([])
+    const cacheTime = 5000
+    const staleTime = 3000
+    const refetchOnWindowFocus = false
+    const keepPreviousData = true
 
     const { isLoading, error, data } = useQuery(['post', postId], () =>
         axios.get(`https://jsonplaceholder.typicode.com/posts/${postId}`).then(res => res.data)
