@@ -1,0 +1,35 @@
+.profile-details {
+  animation: fadeIn 0.4s ease;
+}
+
+.profile-details h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.details-card {
+  background-color: #f8f9fa;
+  padding: 25px;
+  border-radius: 4px;
+  border-left: 4px solid #3498db;
+}
+
+.details-card p {
+  color: #555;
+  margin: 12px 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.details-card strong {
+  color: #2c3e50;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
