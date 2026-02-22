@@ -1,4 +1,6 @@
-import { Link, Outlet } from 'react-router-dom';
+import { Link, Routes, Route, Outlet } from 'react-router-dom';
+import ProfileDetails from './ProfileDetails';
+import ProfileSettings from './ProfileSettings';
 import '../styles/Profile.css';
 
 const Profile = () => {
@@ -13,7 +15,10 @@ const Profile = () => {
       </div>
 
       <div className="profile-content">
-        <Outlet />
+        <Routes>
+          <Route path="details" element={<ProfileDetails />} />
+          <Route path="settings" element={<ProfileSettings />} />
+        </Routes>
       </div>
     </div>
   );
