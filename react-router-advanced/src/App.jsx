@@ -5,6 +5,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import Home from './components/Home';
 import Profile from './components/Profile';
 import UserProfile from './components/UserProfile';
+import BlogPost from './components/BlogPost';
 import Dashboard from './components/Dashboard';
 import NotFound from './components/NotFound';
 import './App.css';
@@ -22,6 +23,7 @@ function App() {
            
             <Route path="/profile/*" element={<Profile />} />
             <Route path="/user/:userId" element={<UserProfile />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
 
             <Route 
               path="/dashboard" 
