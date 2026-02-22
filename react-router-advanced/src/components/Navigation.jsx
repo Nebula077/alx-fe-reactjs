@@ -1,10 +1,9 @@
-import { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { AuthContext } from '../context/AuthContext';
+import useAuth from '../hooks/useAuth';
 import '../styles/Navigation.css';
 
 const Navigation = () => {
-  const { isAuthenticated, login, logout } = useContext(AuthContext);
+  const { isAuthenticated, login, logout } = useAuth();
 
   return (
     <nav className="navbar">

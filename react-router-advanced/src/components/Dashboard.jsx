@@ -1,14 +1,27 @@
-import '../styles/NotFound.css';
+import useAuth from '../hooks/useAuth';
+import '../styles/Dashboard.css';
 
-const NotFound = () => {
+const Dashboard = () => {
+  const { isAuthenticated } = useAuth();
+
   return (
-    <div className="not-found-container">
-      <h1>404</h1>
-      <p>Page Not Found</p>
-      <p>The route you're looking for doesn't exist.</p>
-      <a href="/">Go back to Home</a>
+    <div className="dashboard-container">
+      <h1>Protected Dashboard</h1>
+      {isAuthenticated && (
+        <div className="dashboard-content">
+          <p>You are logged in and can access this protected route!</p>
+          <div className="dashboard-info">
+            <h3>Dashboard Features:</h3>
+            <ul>
+              <li>Profile Management</li>
+              <li>Settings Configuration</li>
+              <li>User Preferences</li>
+            </ul>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
 
-export default NotFound;
+export default Dashboard;
